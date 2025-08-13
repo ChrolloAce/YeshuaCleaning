@@ -388,49 +388,55 @@ p {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
   margin-top: var(--space-3xl);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-card {
-  background: var(--color-bg-primary);
+  background: white;
   border-radius: 0;
   overflow: hidden;
   transition: all var(--transition-normal);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
   position: relative;
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/2;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .service-card-image {
-  height: 75%;
+  height: 70%;
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
 }
 
 .service-card-content {
-  height: 25%;
-  padding: 15px 20px;
-  background: var(--color-bg-primary);
+  height: 30%;
+  padding: 12px 15px;
+  background: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
+  border-top: 1px solid #f0f0f0;
 }
 
 .service-card h3 {
   margin: 0;
   color: var(--color-text-primary);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-family-body);
   line-height: 1.2;
 }
 
@@ -739,24 +745,29 @@ p {
 }
 
 /* ===== WIDGETS STYLING ===== */
-.lc_reviews_widget {
-  position: fixed !important;
-  bottom: 20px !important;
-  right: 20px !important;
-  max-width: 350px !important;
-  max-height: 500px !important;
-  z-index: 9999 !important;
+.reviews-widget-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-lg) 0;
+}
+
+.embedded_reviews_widget {
+  width: 100% !important;
+  min-height: 400px !important;
+  border: none !important;
   border-radius: 8px !important;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
   background: white !important;
 }
 
-/* Mobile responsive for widgets */
+/* Mobile responsive for embedded reviews */
 @media (max-width: 768px) {
-  .lc_reviews_widget {
-    max-width: 280px !important;
-    bottom: 15px !important;
-    right: 15px !important;
+  .embedded_reviews_widget {
+    min-height: 350px !important;
+  }
+  
+  .reviews-widget-container {
+    padding: var(--space-md) 0;
   }
 }
 

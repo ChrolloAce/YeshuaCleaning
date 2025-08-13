@@ -1,20 +1,4 @@
-const testimonials = [
-  {
-    quote: "Imperial Cleaning has been our trusted partner for over 5 years. Their attention to detail and professional service is unmatched. They consistently exceed our expectations.",
-    author: "Michael Thompson",
-    company: "Tarlow & Co., CPA"
-  },
-  {
-    quote: "The team at Imperial Cleaning goes above and beyond every single day. Our office has never looked better, and our employees notice the difference in air quality and cleanliness.",
-    author: "Joyce Chen",
-    company: "Financial Services Corp"
-  },
-  {
-    quote: "Professional, reliable, and thorough. Imperial Cleaning delivers exactly what they promise, every single time. Their green cleaning approach aligns perfectly with our values.",
-    author: "Alla Garcia",
-    company: "Medical Practice Group"
-  }
-];
+import Script from "next/script";
 
 export default function Testimonials() {
   return (
@@ -27,14 +11,18 @@ export default function Testimonials() {
           </p>
         </div>
         
-        <div className="testimonials-grid">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="testimonial-card">
-              <div className="testimonial-quote">&ldquo;{testimonial.quote}&rdquo;</div>
-              <div className="testimonial-author">{testimonial.author}</div>
-              <div className="testimonial-company">{testimonial.company}</div>
-            </div>
-          ))}
+        <div className="reviews-widget-container">
+          <Script 
+            src="https://reputationhub.site/reputation/assets/review-widget.js"
+            strategy="afterInteractive"
+          />
+          <iframe 
+            className="embedded_reviews_widget" 
+            src="https://reputationhub.site/reputation/widgets/review_widget/dIR65OesFgKY03WTP30z?widgetId=689cececaecf3e3f5e844926" 
+            frameBorder="0" 
+            scrolling="no" 
+            style={{ minWidth: '100%', width: '100%', height: '400px', border: 'none' }}
+          />
         </div>
       </div>
     </section>
