@@ -41,7 +41,7 @@ export default function Services() {
             <div className="eyebrow">SERVICES</div>
             <h2 className="services-title">First-Class Cleaning and Disinfecting Services</h2>
             <p className="services-description">
-              At Imperial Cleaning, we take great care in making you look great. 
+              At Yeshua Cleaning, we take great care in making you look great. 
               Our comprehensive professional commercial cleaning and disinfecting services for businesses are second-to-none.
             </p>
             <div className="services-buttons">

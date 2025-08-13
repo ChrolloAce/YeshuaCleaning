@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Imperial Cleaning - Professional Commercial Cleaning Services",
+  title: "Yeshua Cleaning - Professional Commercial Cleaning Services",
   description: "A highly-trained, professional commercial cleaning company serving businesses nationwide with luxury commercial and residential cleaning services.",
 };
 

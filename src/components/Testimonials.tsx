@@ -7,7 +7,7 @@ export default function Testimonials() {
         <div className="text-center mb-2xl">
           <h2 className="heading-2">Personal Endorsements from Satisfied Customers</h2>
           <p className="body-text text-secondary" style={{ maxWidth: '700px', margin: '0 auto' }}>
-            Don&apos;t just take our word for it. Here&apos;s what our valued clients have to say about our services.
+            Don&apos;t just take our word for it. Here&apos;s what our valued clients have to say about Yeshua Cleaning&apos;s services.
           </p>
         </div>
         

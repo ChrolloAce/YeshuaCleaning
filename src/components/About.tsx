@@ -24,7 +24,7 @@ export default function About() {
           </div>
           
           <div>
-            <div className="eyebrow">ABOUT IMPERIAL CLEANING</div>
+            <div className="eyebrow">ABOUT YESHUA CLEANING</div>
             <h3 className="heading-3">Commercial Cleaners Committed to Excellence</h3>
             <p className="body-text-sm">
               We are an elite, nationwide team of certified Custodial Technicians 

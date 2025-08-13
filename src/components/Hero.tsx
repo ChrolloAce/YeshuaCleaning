@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="hero-card">
           <h1>A Highly-Trained, Professional Commercial Cleaning Company</h1>
           <p>
-            From workplaces to retail spaces, Imperial Cleaning sets a new standard for clean, healthy, and safe.
+            From workplaces to retail spaces, Yeshua Cleaning sets a new standard for clean, healthy, and safe.
           </p>
           <Link href="/quote" className="hero-cta-button">
             SCHEDULE A WALK-THROUGH →

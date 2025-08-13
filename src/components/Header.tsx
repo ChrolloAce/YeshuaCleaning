@@ -22,8 +22,8 @@ export default function Header() {
       <header className="header">
         <div className="container">
           <Link href="/" className="logo">
-            <div className="logo-icon">IC</div>
-            <span>IMPERIAL CLEANING</span>
+            <div className="logo-icon">YC</div>
+            <span>YESHUA CLEANING</span>
           </Link>
           
           <nav>
