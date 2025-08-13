@@ -7,7 +7,7 @@ export default function About() {
             About Imperial Cleaning
           </h1>
           <p style={{ textAlign: 'center', fontSize: '18px', color: 'var(--color-muted)', maxWidth: '800px', margin: '0 auto' }}>
-            For over 30 years, Imperial Cleaning has been America's trusted partner 
+            For over 30 years, Imperial Cleaning has been America&apos;s trusted partner 
             for professional commercial and residential cleaning services.
           </p>
         </div>

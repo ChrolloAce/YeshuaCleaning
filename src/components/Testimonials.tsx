@@ -23,14 +23,14 @@ export default function Testimonials() {
         <div className="text-center mb-2xl">
           <h2 className="heading-2">Personal Endorsements from Satisfied Customers</h2>
           <p className="body-text text-secondary" style={{ maxWidth: '700px', margin: '0 auto' }}>
-            Don't just take our word for it. Here's what our valued clients have to say about our services.
+            Don&apos;t just take our word for it. Here&apos;s what our valued clients have to say about our services.
           </p>
         </div>
         
         <div className="testimonials-grid">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="testimonial-card">
-              <div className="testimonial-quote">"{testimonial.quote}"</div>
+              <div className="testimonial-quote">&ldquo;{testimonial.quote}&rdquo;</div>
               <div className="testimonial-author">{testimonial.author}</div>
               <div className="testimonial-company">{testimonial.company}</div>
             </div>
