@@ -738,6 +738,28 @@ p {
   }
 }
 
+/* ===== WIDGETS STYLING ===== */
+.lc_reviews_widget {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  max-width: 350px !important;
+  max-height: 500px !important;
+  z-index: 9999 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15) !important;
+  background: white !important;
+}
+
+/* Mobile responsive for widgets */
+@media (max-width: 768px) {
+  .lc_reviews_widget {
+    max-width: 280px !important;
+    bottom: 15px !important;
+    right: 15px !important;
+  }
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   .about-grid,
