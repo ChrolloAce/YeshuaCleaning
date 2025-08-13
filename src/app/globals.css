@@ -566,12 +566,6 @@ p {
   .services-buttons .btn {
     text-align: center;
   }
-    gap: 20px;
-  }
-  
-  .service-card {
-    aspect-ratio: 5/3;
-  }
 }
 
 /* ===== INDUSTRY CARDS ===== */
