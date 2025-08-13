@@ -153,7 +153,7 @@
   justify-content: center;
   gap: var(--space-sm);
   padding: var(--space-md) var(--space-xl);
-  border-radius: var(--radius-sm);
+  border-radius: 0;
   font-family: var(--font-family-body);
   font-size: var(--text-base);
   font-weight: var(--font-semibold);
