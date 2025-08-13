@@ -33,31 +33,38 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="section section-gray">
+    <section className="services-horizontal-section">
+      <div className="services-background-overlay"></div>
       <div className="container">
-        <div className="text-center mb-2xl">
-          <div className="eyebrow">OUR SERVICES</div>
-          <h2 className="heading-2">First-Class Cleaning and Disinfecting Services</h2>
-          <p className="body-text text-secondary" style={{ maxWidth: '800px', margin: '0 auto' }}>
-            At Imperial Cleaning, we take great care in making you look great. 
-            Our comprehensive professional commercial cleaning and disinfecting services for businesses are second-to-none.
-          </p>
-        </div>
-        
-        <div className="services-grid">
-          {services.map((service, index) => (
-            <div key={index} className="service-card">
-              <div 
-                className="service-card-image"
-                style={{
-                  backgroundImage: `url(${service.image})`
-                }}
-              />
-              <div className="service-card-content">
-                <h3>{service.title}</h3>
-              </div>
+        <div className="services-horizontal-content">
+          <div className="services-text-section">
+            <div className="eyebrow">SERVICES</div>
+            <h2 className="services-title">First-Class Cleaning and Disinfecting Services</h2>
+            <p className="services-description">
+              At Imperial Cleaning, we take great care in making you look great. 
+              Our comprehensive professional commercial cleaning and disinfecting services for businesses are second-to-none.
+            </p>
+            <div className="services-buttons">
+              <button className="btn btn-primary">VIEW ALL OUR SERVICES</button>
+              <button className="btn btn-outline services-btn-outline">RESIDENTIAL SERVICES. LEARN MORE</button>
             </div>
-          ))}
+          </div>
+          
+          <div className="services-cards-horizontal">
+            {services.slice(0, 6).map((service, index) => (
+              <div key={index} className="service-card-horizontal">
+                <div 
+                  className="service-card-image-horizontal"
+                  style={{
+                    backgroundImage: `url(${service.image})`
+                  }}
+                />
+                <div className="service-card-title-horizontal">
+                  <h3>{service.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
