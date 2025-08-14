@@ -26,9 +26,9 @@ export default function Footer() {
                 fontSize: 'var(--text-xl)',
                 boxShadow: 'var(--shadow-md)'
               }}>
-                YC
+                IC
               </div>
-              <span style={{ fontWeight: 'var(--font-bold)', fontSize: 'var(--text-xl)', color: 'var(--color-text-on-dark)' }}>YESHUA CLEANING</span>
+              <span style={{ fontWeight: 'var(--font-bold)', fontSize: 'var(--text-xl)', color: 'var(--color-text-on-dark)' }}>IMPERIAL CLEANING</span>
             </div>
             <p className="body-text-sm">
               For over 30 years, our professional commercial cleaning company has been helping 
@@ -93,9 +93,9 @@ export default function Footer() {
           </div>
         </div>
         
-                <div className="footer-bottom">
-          © Yeshua Cleaning 2025 · Web design by Yeshua Cleaning ·
-          <Link href="/privacy">Privacy Policy</Link> ·
+        <div className="footer-bottom">
+          © Imperial Cleaning 2025 · Web design by Imperial Cleaning · 
+          <Link href="/privacy">Privacy Policy</Link> · 
           <Link href="/sitemap">HTML Sitemap</Link>
         </div>
       </div>

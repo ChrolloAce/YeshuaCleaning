@@ -15,30 +15,28 @@ const industries = [
 
 export default function Industries() {
   return (
-    <section className="industries-section">
-      <div className="industries-background"></div>
-      <div className="industries-overlay"></div>
+    <section className="section section-primary">
       <div className="container">
-        <div className="industries-text-content">
-          <h2 className="industries-title">The Industries We Serve</h2>
-          <p className="industries-subtitle">
+        <div className="text-center mb-2xl">
+          <h2 className="heading-2">The Industries We Serve</h2>
+          <p className="body-text" style={{ maxWidth: '800px', margin: '0 auto' }}>
             We are a firmly established commercial cleaning company that serves many household names 
             in the largest and most influential industries in America.
           </p>
         </div>
         
-        <div className="industries-cards-row">
+        <div className="industries-grid">
           {industries.map((industry, index) => (
-            <div key={index} className="industry-card-new">
+            <div key={index} className="industry-card">
               <div 
-                className="industry-card-image-new"
+                className="industry-card-image"
                 style={{
                   backgroundImage: `url(${industry.image})`
                 }}
               />
-              <div className="industry-card-overlay-box">
-                <h3 className="industry-card-title-new">{industry.title}</h3>
-                <button className="industry-learn-more-btn">Learn More</button>
+              <div className="industry-card-content">
+                <h3 className="heading-3">{industry.title}</h3>
+                <a href="#" className="learn-more-btn">Learn More</a>
               </div>
             </div>
           ))}

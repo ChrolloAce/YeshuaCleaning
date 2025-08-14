@@ -36,7 +36,7 @@ export default function About() {
               organizations all across the United States stay clean, healthy, and safe. 
               Our commitment to excellence and attention to detail sets us apart.
             </p>
-            <Link href="/about" className="btn-primary">
+            <Link href="/about" className="btn btn-primary">
               LEARN MORE ABOUT US
             </Link>
           </div>
