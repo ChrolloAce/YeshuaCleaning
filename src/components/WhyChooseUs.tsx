@@ -7,7 +7,7 @@ const features = [
   {
     icon: "💬",
     title: "Communication",
-    description: "Imperial Cleaning's self-service web portal and mobile app make communication a breeze."
+    description: "Self-service web portal and mobile app make communication a breeze."
   },
   {
     icon: "❤️",
@@ -23,26 +23,25 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="section section-white">
+    <section className="why-choose-us-section">
+      <div className="why-choose-us-background"></div>
+      <div className="why-choose-us-overlay"></div>
       <div className="container">
-        <div className="features-container">
-          <div>
-            <div className="eyebrow">WHY CHOOSE US</div>
-            <h2 className="heading-2">A Deep Commitment to Quality Cleaning Services</h2>
-            <p className="body-text text-secondary">
-              Our dedication to excellence, cutting-edge technology, and personalized service 
-              sets us apart as the premier choice for commercial cleaning solutions.
-            </p>
+        <div className="why-choose-us-content">
+          {/* Left Column - Main Heading */}
+          <div className="why-choose-us-text">
+            <h2 className="why-choose-us-title">A Deep Commitment to Quality Cleaning Services</h2>
           </div>
           
-          <div className="features-grid">
+          {/* Right Column - Feature Cards Grid */}
+          <div className="why-choose-us-cards">
             {features.map((feature, index) => (
-              <div key={index} className="feature-card">
-                <div className="feature-icon">{feature.icon}</div>
-                <h3 className="heading-3">{feature.title}</h3>
-                <p className="body-text-sm mb-0">
-                  {feature.description}
-                </p>
+              <div key={index} className="why-choose-card">
+                <div className="why-choose-card-icon">{feature.icon}</div>
+                <div className="why-choose-card-content">
+                  <h3 className="why-choose-card-title">{feature.title}</h3>
+                  <p className="why-choose-card-description">{feature.description}</p>
+                </div>
               </div>
             ))}
           </div>
